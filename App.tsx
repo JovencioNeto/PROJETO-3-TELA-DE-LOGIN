@@ -21,14 +21,14 @@ export default function App() {
   const myCpf = '111.111.111-11'
 
   const handleLogin = () => {
+    setLoginCount(loginCount +1)
+    
     if (cpf === cpfCorrect) {
       setIsLogged(true)
       setitsMe(false)
-      setLoginCount(loginCount + 1)
     } else if (cpf === myCpf) {
       setIsLogged(true)
       setitsMe(true)
-      setLoginCount(loginCount + 1)
     }
   }
 
